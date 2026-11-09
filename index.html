@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M. Sandaru Rashmika | Cyber Security Specialist &amp; Full Stack Developer</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Portfolio of M. Sandaru Rashmika — Cyber Security Specialist, Full Stack Developer, and IT Professional. Securing systems and engineering modern, resilient digital solutions.">
+  <meta name="author" content="M. Sandaru Rashmika">
+  <meta property="og:title" content="M. Sandaru Rashmika | Cyber Security Specialist &amp; Full Stack Developer">
+  <meta property="og:description" content="Cybersecurity-focused IT professional and full stack developer passionate about building secure, modern, and user-friendly digital solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/sandaru-original.png">
+  <meta name="theme-color" content="#050505">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Content Security Policy -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data: blob:; font-src 'self' https: data:;">
+
+  <!-- Google Fonts: Anton (Display), Caveat (Script), Inter (Body), JetBrains Mono (Tech) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600;700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="theme-dark">
+  <!-- Subtle Grain & Background Overlay -->
+  <div class="film-grain" aria-hidden="true"></div>
+
+  <!-- Custom Cursor System (Desktop) -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-outline" id="cursorOutline" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="M. Sandaru Rashmika Home">
+        SANDARU<span class="accent-dot">.</span>
+      </a>
+
+      <nav class="nav-desktop" id="navDesktop" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">HOME</a></li>
+          <li><a href="#work" class="nav-link">WORK</a></li>
+          <li><a href="#security" class="nav-link">EXPERTISE</a></li>
+          <li><a href="#about" class="nav-link">ABOUT</a></li>
+          <li><a href="#journey" class="nav-link">JOURNEY</a></li>
+          <li><a href="#contact" class="nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contact" class="btn-talk" data-magnetic>
+          <span>LET'S TALK</span>
+          <svg class="icon-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Mobile Menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <ul class="mobile-nav-list">
+          <li><a href="#hero" class="mobile-nav-link">01 / HOME</a></li>
+          <li><a href="#work" class="mobile-nav-link">02 / WORK</a></li>
+          <li><a href="#security" class="mobile-nav-link">03 / EXPERTISE</a></li>
+          <li><a href="#about" class="mobile-nav-link">04 / ABOUT</a></li>
+          <li><a href="#journey" class="mobile-nav-link">05 / JOURNEY</a></li>
+          <li><a href="#contact" class="mobile-nav-link">06 / CONTACT</a></li>
+        </ul>
+        <div class="mobile-socials" id="mobileSocials"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main id="mainContent">
+
+    <!-- ==============================================
+         CINEMATIC HERO SECTION
+         ============================================== -->
+    <section class="section-hero" id="hero" aria-label="Hero Section">
+      <!-- Three.js Canvas Container -->
+      <div class="hero-webgl-container" id="heroThreeContainer" aria-hidden="true"></div>
+
+      <!-- Giant Typography Layer Behind Portrait -->
+      <div class="hero-giant-type" aria-hidden="true">
+        <span class="giant-word">PORTFOLIO</span>
+      </div>
+
+      <!-- Centered Foreground Portrait Layer -->
+      <div class="hero-portrait-layer" id="heroPortraitWrap">
+        <div class="portrait-container">
+          <img 
+            src="assets/images/sandaru-cutout.png" 
+            alt="M. Sandaru Rashmika — Cyber Security Specialist and Full Stack Developer" 
+            class="portrait-img" 
+            id="heroPortraitImg"
+            loading="eager"
+            fetchpriority="high"
+          >
+          <div class="portrait-ambient-glow" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <!-- Foreground Interface & Typography Layer -->
+      <div class="hero-content-grid container">
+        <!-- Left Hero Content -->
+        <div class="hero-col-left">
+          <div class="hero-eyebrow-script">
+            <span class="script-text">Hello, I'm</span>
+          </div>
+
+          <h1 class="hero-name-heading">
+            <span class="name-line">M. SANDARU</span>
+            <span class="name-line">RASHMIKA<span class="accent-dot">.</span></span>
+          </h1>
+
+          <div class="hero-roles-banner">
+            <span class="role-badge">CYBER SECURITY SPECIALIST</span>
+            <span class="role-separator">•</span>
+            <span class="role-badge">FULL STACK DEVELOPER</span>
+            <span class="role-separator">•</span>
+            <span class="role-badge">IT PROFESSIONAL</span>
+          </div>
+
+          <p class="hero-bio-short">
+            Cybersecurity-focused IT professional and full stack developer passionate about building secure, modern, and user-friendly digital solutions.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#work" class="btn btn-primary" data-magnetic>
+              <span>EXPLORE MY WORK</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+            <button class="btn btn-secondary btn-showreel" id="btnPlayShowreel" data-magnetic aria-label="Play Technical Overview Video">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              <span>PLAY SHOWREEL</span>
+            </button>
+            <a href="#contact" class="btn btn-secondary" data-magnetic>
+              <span>LET'S CONNECT</span>
+            </a>
+          </div>
+
+          <div class="hero-location-tag">
+            <span class="status-pulse"></span>
+            <span class="location-text">BASED IN SRI LANKA</span>
+          </div>
+        </div>
+
+        <!-- Right Hero Highlights -->
+        <div class="hero-col-right">
+          <div class="expertise-stat-box" id="heroExpertiseList">
+            <!-- Injected via data.js: Verified expertise highlights without fake counters -->
+          </div>
+
+          <div class="hero-cv-action" id="heroCvContainer" style="display: none;">
+            <a href="" id="heroCvBtn" class="btn-cv-download" download>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>DOWNLOAD CV</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Scroll Indicator -->
+      <a href="#work" class="hero-scroll-indicator" aria-label="Scroll to projects">
+        <span class="scroll-text">SCROLL TO EXPLORE</span>
+        <div class="scroll-line">
+          <span class="line-runner"></span>
+        </div>
+      </a>
+    </section>
+
+    <!-- ==============================================
+         01 — SELECTED PROJECTS SECTION
+         ============================================== -->
+    <section class="section section-work" id="work" aria-label="Selected Projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">01 / SELECTED WORK</span>
+          <h2 class="section-heading">
+            WORK THAT <span class="text-accent">SPEAKS.</span>
+          </h2>
+          <p class="section-subtext">
+            Enterprise-grade cybersecurity assessments, modern full stack applications, and network infrastructure tools.
+          </p>
+        </div>
+
+        <!-- Dynamic Category Filters -->
+        <div class="project-filters" id="projectFilters" role="tablist" aria-label="Project Categories">
+          <!-- Dynamically populated from data.js -->
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Dynamically populated from data.js -->
+        </div>
+
+        <!-- GitHub Profile Banner -->
+        <div class="github-featured-box">
+          <div class="gh-info">
+            <div class="gh-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <div>
+              <h3 class="gh-title">EXPLORE MORE ON GITHUB</h3>
+              <p class="gh-desc">Open source scripts, systems architecture, and code repositories on @virusrash.</p>
+            </div>
+          </div>
+          <a href="https://github.com/virusrash" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-magnetic>
+            <span>VIEW @VIRUSRASH</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         TECH MARQUEE: "BEEN PART OF THE BIGGER PICTURE"
+         ============================================== -->
+    <div class="marquee-section" aria-hidden="true">
+      <div class="marquee-eyebrow">
+        <span>BEEN PART OF THE BIGGER PICTURE</span>
+      </div>
+      <div class="marquee-track" id="marqueeTrack">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+
+    <!-- ==============================================
+         AWARDS & RECOGNITION SECTION
+         ============================================== -->
+    <section class="section section-awards" id="awards" aria-label="Awards and Recognition">
+      <div class="container">
+        <div class="awards-split-grid">
+          <div class="awards-left-col">
+            <span class="section-eyebrow">RECOGNITION &amp; AWARDS</span>
+            <h2 class="section-heading">
+              THE WORK. <span class="text-accent">THE RECOGNITION.</span>
+            </h2>
+            <div class="awards-laurel-badge">
+              <span class="laurel-icon">🏆</span>
+              <div class="laurel-stat">
+                <span class="laurel-number">03<span class="text-accent">+</span></span>
+                <span class="laurel-label">ACADEMIC &amp; TECHNICAL RECOGNITIONS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="awards-right-col" id="awardsList">
+            <!-- Dynamically populated from data.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         BEFORE & AFTER INTERACTIVE SLIDER: "FROM RAW. TO REAL."
+         ============================================== -->
+    <section class="section section-beforeafter" id="beforeAfterSection" aria-label="System Hardening Before and After">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">A LOOK UNDER THE SURFACE</span>
+          <h2 class="section-heading">
+            FROM RAW. <span class="text-accent">TO REAL.</span>
+          </h2>
+          <p class="section-subtext">
+            Drag the slider to compare raw unhardened infrastructure against fully hardened, zero-trust security architecture.
+          </p>
+        </div>
+
+        <div class="ba-container" id="baContainer">
+          <div class="ba-before">
+            <div class="ba-content">
+              <span class="ba-pill ba-pill-before">RAW EXPOSURE</span>
+              <h3 class="ba-state-title">Vulnerable System Baseline</h3>
+              <p class="ba-state-desc" id="baBeforeText"></p>
+            </div>
+          </div>
+
+          <div class="ba-after" id="baAfterLayer">
+            <div class="ba-content">
+              <span class="ba-pill ba-pill-after">HARDENED SECURITY</span>
+              <h3 class="ba-state-title">Zero-Trust Production Architecture</h3>
+              <p class="ba-state-desc" id="baAfterText"></p>
+            </div>
+          </div>
+
+          <div class="ba-slider-handle" id="baHandle">
+            <div class="ba-line"></div>
+            <div class="ba-button">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </div>
+            <div class="ba-line"></div>
+          </div>
+        </div>
+        <div class="ba-caption" id="baCaption">
+          <!-- Dynamic caption -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         02 — CYBER SECURITY EXPERTISE SECTION
+         ============================================== -->
+    <section class="section section-security" id="security" aria-label="Cyber Security Expertise">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">02 / SECURITY EXPERTISE</span>
+          <h2 class="section-heading">
+            SECURING THE <span class="text-accent">DIGITAL WORLD.</span>
+          </h2>
+          <p class="section-subtext">
+            Rigorous security analysis, vulnerability management, and infrastructure hardening designed to protect assets against real-world threats.
+          </p>
+        </div>
+
+        <div class="security-split-layout">
+          <!-- Abstract Three.js Node Canvas Container -->
+          <div class="security-visual-card">
+            <div class="sec-canvas-wrapper" id="secVisualCanvas"></div>
+            <div class="sec-visual-overlay">
+              <span class="sec-tag">DEFENSIVE ARCHITECTURE</span>
+              <p class="sec-quote">"Security is not a single product or feature; it is an ongoing discipline of resilience and verification."</p>
+            </div>
+          </div>
+
+          <!-- Verified Security Competencies List -->
+          <div class="security-competencies" id="securityCompetenciesList">
+            <!-- Dynamically populated from data.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         03 — FULL STACK DEVELOPMENT SECTION
+         ============================================== -->
+    <section class="section section-development" id="development" aria-label="Full Stack Development">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">03 / DEVELOPMENT</span>
+          <h2 class="section-heading">
+            FROM CONCEPT <span class="text-accent">TO CODE.</span>
+          </h2>
+          <p class="section-subtext">
+            Clean codebases, modern component architectures, and robust backend microservices engineered for security, speed, and scale.
+          </p>
+        </div>
+
+        <div class="tech-stack-showcase" id="techStackShowcase">
+          <!-- Categorized tech stacks rendered here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         04 — IT OPERATIONS & INFRASTRUCTURE SECTION
+         ============================================== -->
+    <section class="section section-itops" id="itops" aria-label="IT Operations">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">04 / IT OPERATIONS</span>
+          <h2 class="section-heading">
+            BEYOND CODE. <span class="text-accent">INTO SYSTEMS.</span>
+          </h2>
+          <p class="section-subtext">
+            Hands-on systems administration, network topography, hardware diagnostics, and enterprise server maintenance.
+          </p>
+        </div>
+
+        <div class="itops-grid" id="itopsGrid">
+          <!-- Dynamically populated from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         05 — ABOUT ME SECTION
+         ============================================== -->
+    <section class="section section-about" id="about" aria-label="About M. Sandaru Rashmika">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">05 / ABOUT</span>
+          <h2 class="section-heading">
+            MORE THAN CODE. <span class="text-accent">BUILT ON CURIOSITY.</span>
+          </h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Biography Text Column -->
+          <div class="about-bio-col">
+            <div class="bio-paragraphs" id="aboutBioParagraphs">
+              <!-- Dynamically populated from data.js -->
+            </div>
+
+            <!-- Verified Education Card -->
+            <div class="education-highlight-card" id="educationCard">
+              <div class="edu-badge">ACADEMIC CREDENTIAL</div>
+              <h3 class="edu-degree">Bachelor's Degree in IT and Cyber Security</h3>
+              <p class="edu-classification">Classification: <strong class="text-accent">Second Class Upper Division</strong></p>
+              <p class="edu-desc">Rigorous curriculum covering offensive and defensive cybersecurity operations, system administration, database structures, and software engineering.</p>
+            </div>
+          </div>
+
+          <!-- Editorial Philosophy & Identity Column -->
+          <div class="about-side-col">
+            <div class="portrait-mini-card">
+              <img src="assets/images/sandaru-original.png" alt="M. Sandaru Rashmika" class="mini-portrait" loading="lazy">
+              <div class="mini-overlay">
+                <span class="mini-name">M. SANDARU RASHMIKA</span>
+                <span class="mini-role">CYBER SECURITY &amp; FULL STACK</span>
+              </div>
+            </div>
+
+            <div class="philosophy-quote-card">
+              <span class="quote-mark">“</span>
+              <p class="quote-text">Build with purpose. Secure by design. Keep learning.</p>
+              <span class="quote-author">— M. Sandaru Rashmika</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         06 — TECHNICAL TOOLKIT SECTION
+         ============================================== -->
+    <section class="section section-toolkit" id="toolkit" aria-label="Technical Toolkit">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">06 / TECH STACK</span>
+          <h2 class="section-heading">
+            THE TOOLS <span class="text-accent">BEHIND THE WORK.</span>
+          </h2>
+          <p class="section-subtext">
+            Verified programming languages, frameworks, operating environments, and databases utilized in production.
+          </p>
+        </div>
+
+        <div class="toolkit-grid" id="toolkitGrid">
+          <!-- Populated dynamically from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         07 — MY DEVELOPMENT PROCESS SECTION
+         ============================================== -->
+    <section class="section section-process" id="process" aria-label="Development Process">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">07 / MY APPROACH</span>
+          <h2 class="section-heading">
+            FROM IDEA <span class="text-accent">TO EXECUTION.</span>
+          </h2>
+          <p class="section-subtext">
+            A structured five-phase methodology balancing rapid software iteration with security-first engineering.
+          </p>
+        </div>
+
+        <div class="process-timeline-wrap">
+          <!-- Animated Line Drawing on Scroll -->
+          <div class="process-line-track" aria-hidden="true">
+            <div class="process-line-bar" id="processLineBar"></div>
+          </div>
+
+          <div class="process-steps-list" id="processStepsList">
+            <!-- Populated dynamically from data.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         08 — EDUCATION & JOURNEY SECTION
+         ============================================== -->
+    <section class="section section-journey" id="journey" aria-label="Education and Journey">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">08 / MY JOURNEY</span>
+          <h2 class="section-heading">
+            KEEP LEARNING. <span class="text-accent">KEEP BUILDING.</span>
+          </h2>
+          <p class="section-subtext">
+            Academic achievements and continuous professional mastery in information technology and cybersecurity.
+          </p>
+        </div>
+
+        <div class="journey-content-wrap">
+          <div class="journey-card">
+            <div class="journey-header">
+              <span class="journey-year">DEGREE COMPLETED</span>
+              <span class="journey-honor-pill">SECOND CLASS UPPER DIVISION</span>
+            </div>
+            <h3 class="journey-title">Bachelor's Degree in IT and Cyber Security</h3>
+            <p class="journey-body">
+              Specialized academic grounding spanning cybersecurity operations, threat vulnerability assessment, networking protocol architectures, system administration, and software development methodologies.
+            </p>
+            <div class="journey-tags">
+              <span class="j-tag">Cyber Security</span>
+              <span class="j-tag">Vulnerability Assessment</span>
+              <span class="j-tag">System Administration</span>
+              <span class="j-tag">Full Stack Development</span>
+              <span class="j-tag">Network Architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         09 — CONTACT SECTION
+         ============================================== -->
+    <section class="section section-contact" id="contact" aria-label="Contact Section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">09 / CONTACT</span>
+          <h2 class="section-heading">
+            LET'S BUILD <span class="text-accent">SOMETHING GREAT.</span>
+          </h2>
+          <p class="contact-secondary-line">
+            SECURE. MODERN. MEANINGFUL.
+          </p>
+          <p class="section-subtext">
+            Available for cybersecurity consultation, full stack web engineering, and enterprise IT initiatives. Let's start the conversation.
+          </p>
+        </div>
+
+        <div class="contact-layout-grid">
+          <!-- Left: Direct Channels -->
+          <div class="contact-direct-card">
+            <h3 class="contact-card-title">GET IN TOUCH</h3>
+
+            <div class="direct-item">
+              <span class="direct-label">EMAIL ADDRESS</span>
+              <a href="mailto:srrashmika98@gmail.com" class="direct-link">
+                srrashmika98@gmail.com
+              </a>
+            </div>
+
+            <div class="direct-item">
+              <span class="direct-label">WHATSAPP DIRECT</span>
+              <a href="https://wa.me/94764188538" target="_blank" rel="noopener noreferrer" class="direct-link">
+                +94 76 418 8538
+              </a>
+            </div>
+
+            <div class="direct-item">
+              <span class="direct-label">LOCATION</span>
+              <span class="direct-value">Sri Lanka</span>
+            </div>
+
+            <div class="direct-item">
+              <span class="direct-label">SOCIAL PROFILES</span>
+              <div class="contact-social-pills" id="contactSocialPills">
+                <!-- Populated dynamically from data.js -->
+              </div>
+            </div>
+
+            <div class="direct-cta-block">
+              <a href="https://wa.me/94764188538" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block" data-magnetic>
+                <span>START A CONVERSATION</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-card">
+            <h3 class="contact-card-title">SEND A MESSAGE</h3>
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="formName" class="form-label">FULL NAME <span class="required">*</span></label>
+                <input type="text" id="formName" name="name" class="form-input" placeholder="e.g. John Doe" required autocomplete="name">
+                <span class="field-error" id="nameError" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="formEmail" class="form-label">EMAIL ADDRESS <span class="required">*</span></label>
+                <input type="email" id="formEmail" name="email" class="form-input" placeholder="e.g. john@example.com" required autocomplete="email">
+                <span class="field-error" id="emailError" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="formMessage" class="form-label">PROJECT DETAILS <span class="required">*</span></label>
+                <textarea id="formMessage" name="message" class="form-textarea" rows="4" placeholder="Briefly describe your requirements or inquiry..." required></textarea>
+                <span class="field-error" id="messageError" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="formSubmitBtn" data-magnetic>
+                <span>TRANSMIT MESSAGE</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+
+              <div class="form-status-alert" id="formStatusAlert" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==============================================
+       VIDEO SHOWREEL MODAL
+       ============================================== -->
+  <div class="case-study-modal" id="videoModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="videoModalTitle">
+    <div class="modal-backdrop" id="videoModalBackdrop"></div>
+    <div class="modal-dialog-content video-modal-content">
+      <button class="modal-close-btn" id="videoModalCloseBtn" aria-label="Close Video">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <h3 id="videoModalTitle" style="font-size: 1.6rem; margin-bottom: 1rem;">TECHNICAL DEMO &amp; OVERVIEW</h3>
+      <div class="video-responsive-wrap">
+        <iframe id="videoIframe" src="" title="Sandaru Technical Showreel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================
+       PROJECT CASE STUDY MODAL DIALOG
+       ============================================== -->
+  <div class="case-study-modal" id="caseStudyModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-dialog-content">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Case Study">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="modal-body" id="modalBody">
+        <!-- Injected via JavaScript when a project is clicked -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================
+       FOOTER
+       ============================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col-brand">
+        <a href="#hero" class="brand-logo footer-logo">
+          SANDARU<span class="accent-dot">.</span>
+        </a>
+        <p class="footer-role">
+          CYBER SECURITY SPECIALIST | FULL STACK DEVELOPER | IT PROFESSIONAL
+        </p>
+      </div>
+
+      <div class="footer-col-links">
+        <div class="footer-social-list" id="footerSocialList"></div>
+      </div>
+
+      <div class="footer-col-meta">
+        <button class="btn-back-to-top" id="backToTopBtn" aria-label="Back to top">
+          <span>BACK TO TOP</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+        </button>
+        <p class="footer-copyright">
+          &copy; <span id="currentYear">2026</span> M. Sandaru Rashmika. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External Libraries: Pinned Stable CDN Distributions -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+  <!-- ES Modules Portfolio Codebase -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
+

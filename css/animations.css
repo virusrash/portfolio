@@ -1,0 +1,135 @@
+/* ==========================================================================
+   M. SANDARU RASHMIKA — ANIMATIONS & INTERACTIVE MOTION SYSTEM
+   ========================================================================== */
+
+/* Custom Cursor System */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background-color: var(--accent-red);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s ease, transform 0.1s ease;
+  will-change: transform;
+}
+
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(255, 59, 59, 0.45);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  transform: translate(-50%, -50%);
+  transition: width 0.25s ease, height 0.25s ease, border-color 0.25s ease, background-color 0.25s ease, transform 0.15s ease;
+  will-change: transform, width, height;
+}
+
+/* Hovering interactive elements */
+body.cursor-hover .cursor-outline {
+  width: 52px;
+  height: 52px;
+  border-color: var(--accent-red);
+  background-color: rgba(255, 59, 59, 0.08);
+}
+
+body.cursor-card-hover .cursor-outline {
+  width: 68px;
+  height: 68px;
+  border-color: var(--accent-red);
+  background-color: rgba(255, 59, 59, 0.15);
+}
+
+/* Hide custom cursor on touch screens */
+@media (hover: none) and (pointer: coarse) {
+  .cursor-dot,
+  .cursor-outline {
+    display: none !important;
+  }
+}
+
+/* Keyframes */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 59, 59, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(255, 59, 59, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 59, 59, 0);
+  }
+}
+
+@keyframes scrollRunner {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(200%);
+  }
+}
+
+@keyframes subtleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* GSAP Reveal State Presets */
+.gsap-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.gsap-fade {
+  opacity: 0;
+}
+
+.gsap-slide-right {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+.gsap-slide-left {
+  opacity: 0;
+  transform: translateX(40px);
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .cursor-dot,
+  .cursor-outline {
+    display: none !important;
+  }
+
+  .gsap-reveal,
+  .gsap-fade,
+  .gsap-slide-right,
+  .gsap-slide-left {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+

@@ -1,0 +1,229 @@
+/* ==========================================================================
+   M. SANDARU RASHMIKA — RESPONSIVE DESIGN ARCHITECTURE
+   Breakpoints: 1440px+, 1280px, 1024px, 768px, 430px, 375px, 360px, 320px
+   ========================================================================== */
+
+/* 1920px Ultra-Wide Screens */
+@media (min-width: 1920px) {
+  :root {
+    --site-max-width: 1600px;
+  }
+  .giant-word {
+    font-size: 24rem;
+  }
+}
+
+/* 1280px - 1440px Large Desktop */
+@media (max-width: 1440px) {
+  .hero-content-grid {
+    grid-template-columns: 1.25fr 0.75fr;
+  }
+  .portrait-container {
+    max-height: 80vh;
+  }
+  .portrait-img {
+    max-height: 78vh;
+  }
+}
+
+/* 1024px Tablets Landscape / Small Laptops */
+@media (max-width: 1024px) {
+  .nav-desktop {
+    display: none;
+  }
+  
+  .menu-toggle {
+    display: flex;
+  }
+  
+  .hero-content-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding-top: 2rem;
+  }
+
+  .hero-col-right {
+    align-items: flex-start;
+  }
+
+  .expertise-stat-box {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .hero-portrait-layer {
+    opacity: 0.45; /* Soften behind text on medium screens if overlapping */
+  }
+
+  .security-split-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .security-visual-card {
+    position: static;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-side-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-col-meta {
+    align-items: flex-start;
+  }
+
+  .footer-copyright {
+    text-align: left;
+  }
+}
+
+/* 768px Tablets Portrait / Large Mobiles */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 70px;
+    --section-padding: 4.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+
+  .process-timeline-wrap {
+    padding-left: 0;
+  }
+
+  .process-line-track {
+    left: 15px;
+  }
+
+  .process-steps-list {
+    padding-left: 45px;
+  }
+
+  .step-marker-node {
+    left: -42px;
+    width: 26px;
+    height: 26px;
+    font-size: 0.65rem;
+  }
+
+  .github-featured-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.8rem;
+  }
+
+  .about-side-col {
+    grid-template-columns: 1fr;
+  }
+
+  .itops-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-direct-card,
+  .contact-form-card {
+    padding: 1.8rem 1.4rem;
+  }
+
+  .modal-dialog-content {
+    padding: 2rem 1.5rem;
+    width: 95%;
+  }
+
+  .btn-talk {
+    display: none; /* In mobile drawer */
+  }
+}
+
+/* 430px, 375px, 360px, 320px Mobile Screen Sizes */
+@media (max-width: 430px) {
+  :root {
+    --section-padding: 3.8rem;
+    --container-padding: 1.15rem;
+  }
+
+  .hero-name-heading {
+    font-size: 2.85rem;
+  }
+
+  .giant-word {
+    font-size: clamp(4.5rem, 24vw, 7.5rem);
+  }
+
+  .hero-portrait-layer {
+    opacity: 0.28;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .project-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .journey-card {
+    padding: 1.6rem 1.2rem;
+  }
+
+  .journey-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .journey-title {
+    font-size: 1.5rem;
+  }
+
+  .comp-card {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
+
+/* 320px Extra Small Mobile Devices */
+@media (max-width: 320px) {
+  .hero-name-heading {
+    font-size: 2.4rem;
+  }
+
+  .section-heading {
+    font-size: 2.2rem;
+  }
+
+  .role-badge {
+    font-size: 0.65rem;
+  }
+
+  .contact-card-title {
+    font-size: 1.25rem;
+  }
+}
+
